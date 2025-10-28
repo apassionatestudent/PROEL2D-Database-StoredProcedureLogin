@@ -37,8 +37,8 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvDataReference = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDataReference)).BeginInit();
             this.SuspendLayout();
             // 
             // lblProfile
@@ -102,6 +102,7 @@
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Enabled = false;
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.Location = new System.Drawing.Point(167, 226);
             this.txtFirstName.Name = "txtFirstName";
@@ -110,6 +111,7 @@
             // 
             // txtLastName
             // 
+            this.txtLastName.Enabled = false;
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.Location = new System.Drawing.Point(167, 298);
             this.txtLastName.Name = "txtLastName";
@@ -125,22 +127,23 @@
             this.txtAge.Size = new System.Drawing.Size(316, 34);
             this.txtAge.TabIndex = 8;
             // 
-            // dataGridView1
+            // dgvDataReference
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 476);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(882, 64);
-            this.dataGridView1.TabIndex = 9;
+            this.dgvDataReference.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDataReference.Location = new System.Drawing.Point(12, 476);
+            this.dgvDataReference.Name = "dgvDataReference";
+            this.dgvDataReference.ReadOnly = true;
+            this.dgvDataReference.RowHeadersWidth = 51;
+            this.dgvDataReference.RowTemplate.Height = 24;
+            this.dgvDataReference.Size = new System.Drawing.Size(882, 64);
+            this.dgvDataReference.TabIndex = 9;
             // 
             // TeacherProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(906, 565);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvDataReference);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.txtFirstName);
@@ -154,7 +157,7 @@
             this.Name = "TeacherProfile";
             this.Text = "TeacherProfile";
             this.Load += new System.EventHandler(this.TeacherProfile_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDataReference)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,6 +174,6 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtAge;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDataReference;
     }
 }

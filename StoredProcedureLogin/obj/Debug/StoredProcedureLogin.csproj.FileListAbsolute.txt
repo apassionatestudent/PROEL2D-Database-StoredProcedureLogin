@@ -9,7 +9,6 @@ D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\StoredP
 D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\StoredProcedureLogin.pdb
 D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\obj\Debug\StoredProcedureLogin.exe
 D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\obj\Debug\StoredProcedureLogin.pdb
-D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\obj\Debug\StoredProcedureLogin.exe.config
 D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\obj\Debug\StoredProcedureLogin.Dashboard.resources
 D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\Microsoft.Bcl.HashCode.dll
@@ -106,3 +105,17 @@ D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\obj\Debug\StoredP
 D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\obj\Debug\StoredProcedureLogin.TeacherSubjects.resources
 D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\obj\Debug\StoredProcedureLogin.AdminSubjectsPage.resources
 D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\obj\Debug\StoredProcedureLogin.ForgotPassword.resources
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.xml
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\LiveCharts.dll
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\LiveCharts.WinForms.dll
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\LiveCharts.Wpf.dll
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\LiveCharts.pdb
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\LiveCharts.xml
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\LiveCharts.WinForms.pdb
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\LiveCharts.WinForms.xml
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\LiveCharts.Wpf.pdb
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\bin\Debug\LiveCharts.Wpf.xml
+D:\Educational\repos\StoredProcedureLogin\StoredProcedureLogin\obj\Debug\StoredProcedureLogin.exe.config

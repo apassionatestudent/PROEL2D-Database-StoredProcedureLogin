@@ -10,6 +10,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 
 namespace StoredProcedureLogin
@@ -24,6 +25,16 @@ namespace StoredProcedureLogin
         bool isRoleClicked = false;
         bool isNameClicked = false;
         bool isDateClicked = false;
+
+   
+        // Helps the search process, null by default
+        string roleName = string.Empty;
+        //string name = null;
+        //string dateFrom;
+        //string dateTo;
+
+        private BindingSource LogsBindingSource = new BindingSource();
+
         public AdminLogsPage()
         {
             InitializeComponent();
@@ -31,8 +42,14 @@ namespace StoredProcedureLogin
             dtpDateFrom.Format = DateTimePickerFormat.Custom;
             dtpDateTo.Format = DateTimePickerFormat.Custom;
 
-            dtpDateFrom.CustomFormat = "MM/dd/yyyy";
-            dtpDateTo.CustomFormat = "MM/dd/yyyy";
+            //dtpDateFrom.CustomFormat = "YYYY/mm/dd | MM/dd/yyyy";
+            //dtpDateTo.CustomFormat = "MM/dd/yyyy";
+
+            dtpDateFrom.CustomFormat = "yyyy-MM-dd";
+            dtpDateTo.CustomFormat = "yyyy-MM-dd";
+
+            //dtpDateFrom.Value = DateTimePicker.MinimumDateTime;
+            //dtpDateTo.Value = DateTimePicker.MinimumDateTime;
         }
 
         string connectionString = @"Data Source=RICSON\SQLEXPRESS;Initial Catalog=StoredProcedure;Integrated Security=True;";
@@ -75,146 +92,100 @@ namespace StoredProcedureLogin
             }
         }
 
+        private void LoadQueryLogs(string selectCommand)
+        {
+            try
+            {
 
-       
+                // Create connection and command objects
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Create command object
+                    SqlCommand command = new SqlCommand(selectCommand, connection);
+
+                    // Add parameter safely
+                    SqlParameter param = new SqlParameter("@Role", SqlDbType.NVarChar, 50);
+                    SqlParameter param2 = new SqlParameter("@Name", SqlDbType.NVarChar, 100);
+                    SqlParameter param3 = new SqlParameter("@DateFrom", SqlDbType.NVarChar, 200);
+                    SqlParameter param4 = new SqlParameter("@DateTo", SqlDbType.NVarChar, 200);
+
+                    // Assign values to parameters, damn 
+                    param.Value = roleName;
+                    param2.Value = txtName.Text;
+                    param3.Value = dtpDateFrom.Text;
+                    param4.Value = dtpDateTo.Text;
+
+                    command.Parameters.Add(param);
+                    command.Parameters.Add(param2);
+                    command.Parameters.Add(param3);
+                    command.Parameters.Add(param4);
+
+                    // Create data adapter with the prepared command
+                    dataAdapter = new SqlDataAdapter(command);
+
+                    // Fill dataset and bind to BindingSource
+                    DataTable table = new DataTable();
+                    dataAdapter.Fill(table);
+                    LogsBindingSource.DataSource = table;
+
+                    // Bind DataGridView to BindingSource
+                    dgvLogs.DataSource = LogsBindingSource;
+
+                    // Set Fill mode for all columns except one
+                    foreach (DataGridViewColumn column in dgvLogs.Columns)
+                    {
+                        column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                    }
+
+                    // Set the last column to fill remaining space
+                    int lastColumnIndex = dgvLogs.Columns.Count - 1;
+                    dgvLogs.Columns[lastColumnIndex].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                    dgvLogs.AutoResizeColumns();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Coures => Error loading data: " + ex.Message);
+            }
+        }
+
         private void AdminLogsPage_Load(object sender, EventArgs e)
         {
             GetData(@"
-                SELECT * FROM dbo.DisplayLogs()
+                SELECT * FROM dbo.DisplayLogs() ORDER BY LogID DESC;
             ");
         }
 
-        private void UpdateUIBasedOnSelections()
-        {
-            // Enable/disable controls based on selections
-            btnReset.Enabled = isRoleClicked || isNameClicked || isDateClicked;
-
-            // Visual feedback for selected filters
-            cbxFilterRoles.BackColor = isRoleClicked ? Color.LightBlue : SystemColors.Window;
-            txtName.BackColor = isNameClicked ? Color.LightBlue : SystemColors.Window;
-
-            if (isDateClicked)
-            {
-                dtpDateFrom.BackColor = Color.LightBlue;
-                dtpDateTo.BackColor = Color.LightBlue;
-            }
-            else
-            {
-                dtpDateFrom.BackColor = SystemColors.Window;
-                dtpDateTo.BackColor = SystemColors.Window;
-            }
-        }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            //string SelectedRole = String.Empty;
-            //string SearchName = String.Empty;
-
-            //if (cbxFilterRoles.SelectedIndex == 0)
-            //{
-            //    SelectedRole = "Admin";
-            //}
-
-            //else if (cbxFilterRoles.SelectedIndex == 1)
-            //{
-            //    SelectedRole = "Teacher";
-            //}
-
-            //else
-            //{
-            //    SelectedRole = "Student";
-            //}
-
-            // Clear previous filters
-            isRoleClicked = false;
-            isNameClicked = false;
-            isDateClicked = false;
-
-            // Start with all rows visible
-            foreach (DataGridViewRow row in dgvLogs.Rows)
+            // Prevent incorrect date flow 
+            if (dtpDateFrom.Value > dtpDateTo.Value)
             {
-                row.Visible = true;
+                dtpDateFrom.Value = dtpDateTo.Value;
+                MessageBox.Show("Start date cannot be later than end date");
+                return;
             }
 
-            // Apply role filter if selected
-            if (cbxFilterRoles.SelectedIndex > -1)
+            if (dtpDateTo.Value < dtpDateFrom.Value)
             {
-                string SelectedRole = cbxFilterRoles.SelectedItem.ToString();
-                foreach (DataGridViewRow row in dgvLogs.Rows)
-                {
-                    if (row.Cells["RoleName"].Value?.ToString() != SelectedRole)
-                    {
-                        row.Visible = false;
-                    }
-                }
-                isRoleClicked = true;
+                dtpDateTo.Value = dtpDateFrom.Value;
+                MessageBox.Show("End date cannot be earlier than start date");
+                return;
             }
 
-            // Apply name filter if text exists
-            if (!string.IsNullOrWhiteSpace(txtName.Text))
-            {
-                string searchName = txtName.Text.ToLower();
-                foreach (DataGridViewRow row in dgvLogs.Rows)
-                {
-                    if ((bool)!row.Cells["Name"].Value?.ToString().ToLower().Contains(searchName))
-                    {
-                        row.Visible = false;
-                    }
-                }
-                isNameClicked = true;
-            }
-
-            // Apply date range filter if dates are set
-            if (dtpDateFrom.Value != DateTime.MinValue && dtpDateTo.Value != DateTime.MinValue)
-            {
-                DateTime startDate = dtpDateFrom.Value;
-                DateTime endDate = dtpDateTo.Value;
-
-                foreach (DataGridViewRow row in dgvLogs.Rows)
-                {
-                    DateTime logDate;
-                    if (DateTime.TryParse(row.Cells["LogDate"].Value?.ToString(), out logDate))
-                    {
-                        if (logDate < startDate || logDate > endDate)
-                        {
-                            row.Visible = false;
-                        }
-                    }
-                    else
-                    {
-                        row.Visible = false;
-                    }
-                }
-                isDateClicked = true;
-
-
-
-                //if (isRoleClicked)
-                //{
-
-                //}
-
-                //else if (isNameClicked)
-                //{
-
-                //}
-
-                //else if (isDateClicked)
-                //{
-
-                //}
-
-                //else {
-                //    MessageBox.Show("Please select a filter option before searching.", "No Filter Selected!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    return;
-                //}
-            }
+            Console.WriteLine($"btnSearch_Click roleName => {roleName}");
+            Console.WriteLine($"[SP_QueryLogs] => {roleName}, {txtName.Text}, {dtpDateFrom.Text}, {dtpDateTo.Text}");
+            LoadQueryLogs(@"EXEC [dbo].[SP_QueryLogs] @Role, @Name, @DateFrom, @DateTo");
         }
 
         private void cbxFilterRoles_Click(object sender, EventArgs e)
         {
             isRoleClicked = true; 
 
+            
         }
 
         private void txtName_Click(object sender, EventArgs e)
@@ -237,8 +208,35 @@ namespace StoredProcedureLogin
         private void btnReset_Click(object sender, EventArgs e)
         {
             GetData(@"
-                SELECT * FROM dbo.DisplayLogs()
+                SELECT * FROM dbo.DisplayLogs() ORDER BY LogID DESC;
             ");
+        }
+
+        private void cbxFilterRoles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxFilterRoles.SelectedIndex == -1)
+            {
+                roleName = null;
+                Console.WriteLine(roleName);
+            }
+
+            else if (cbxFilterRoles.SelectedIndex == 0)
+            {
+                roleName = "Admin";
+                Console.WriteLine(roleName);
+            }
+
+            else if (cbxFilterRoles.SelectedIndex == 1)
+            {
+                roleName = "Instructor";
+                Console.WriteLine(roleName);
+            }
+
+            else
+            {
+                roleName = "Student";
+                Console.WriteLine(roleName);
+            }
         }
     }
 

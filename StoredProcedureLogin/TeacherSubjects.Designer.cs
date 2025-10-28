@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.lblSubjects = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvCourses = new System.Windows.Forms.DataGridView();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCourses)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSubjects
@@ -45,15 +45,17 @@
             this.lblSubjects.TabIndex = 1;
             this.lblSubjects.Text = "Subjects";
             // 
-            // dataGridView1
+            // dgvCourses
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 106);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(882, 280);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvCourses.AllowUserToAddRows = false;
+            this.dgvCourses.AllowUserToDeleteRows = false;
+            this.dgvCourses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCourses.Location = new System.Drawing.Point(12, 53);
+            this.dgvCourses.Name = "dgvCourses";
+            this.dgvCourses.RowHeadersWidth = 51;
+            this.dgvCourses.RowTemplate.Height = 24;
+            this.dgvCourses.Size = new System.Drawing.Size(882, 333);
+            this.dgvCourses.TabIndex = 2;
             // 
             // btnSearch
             // 
@@ -64,6 +66,7 @@
             this.btnSearch.TabIndex = 7;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -80,13 +83,13 @@
             this.ClientSize = new System.Drawing.Size(906, 565);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvCourses);
             this.Controls.Add(this.lblSubjects);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TeacherSubjects";
             this.Text = "TeacherSubjects";
             this.Load += new System.EventHandler(this.TeacherSubjects_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCourses)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,7 +98,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblSubjects;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCourses;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
     }

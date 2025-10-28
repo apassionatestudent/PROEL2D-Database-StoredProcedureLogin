@@ -31,6 +31,8 @@ namespace StoredProcedureLogin.Resources
         //clear field
         bool isCellClicked = false;
 
+        bool isErrorFound = false;
+
         string FilePath = ""; // for pic directory
         public AdminStudentPage(string FullName, int RoleID)
         {
@@ -114,6 +116,7 @@ namespace StoredProcedureLogin.Resources
             {
                 // Check if the inputs are valid first
                 VerifyInputs();
+                ConfirmInputs();
 
                 try {
                     string connectionString = @"Data Source=RICSON\SQLEXPRESS;Initial Catalog=StoredProcedure;Integrated Security=True;";
@@ -139,52 +142,55 @@ namespace StoredProcedureLogin.Resources
                             return;
                         }
 
-                        // Execute the stored procedure
-                        using (SqlCommand command = new SqlCommand("dbo.SP_AddStudent", connection))
+                        if (isErrorFound == false)
                         {
-                            command.CommandType = CommandType.StoredProcedure;
-
-                            command.Parameters.AddWithValue("@FirstName", txtFirstName.Text);
-                            command.Parameters.AddWithValue("@LastName", txtLastName.Text);
-                            //command.Parameters.AddWithValue("@Department", cbxDepartments.SelectedItem.ToString());
-                            //command.Parameters.AddWithValue("@Department", cbxDepartments.SelectedIndex.ToString());
-                            command.Parameters.AddWithValue("@UserName", txtUsername.Text);
-                            command.Parameters.AddWithValue("@Password", txtPassword.Text);
-                            command.Parameters.AddWithValue("@PictureDirectory", FilePath);
-                            command.Parameters.AddWithValue("@Status", cbStatus.SelectedItem.ToString());
-                            //command.Parameters.AddWithValue("@PictureDirectory", pbxTeacherProfile.ImageLocation ?? "");
-
-                            // Add the new profile fields, why did I forget this earlier? Hahaha
-                            command.Parameters.AddWithValue("@Age", txtAge.Text);
-                            command.Parameters.AddWithValue("@Gender", cbGender.SelectedIndex.ToString());
-                            command.Parameters.AddWithValue("@Phone", txtPhone.Text);
-                            command.Parameters.AddWithValue("@Address", txtAddress.Text);
-                            command.Parameters.AddWithValue("@Email", txtEmailAddress.Text);
-                            command.Parameters.AddWithValue("@RecoveryCode", Convert.ToInt32(txtRecoveryCode.Text));
-
-                            //command.ExecuteNonQuery();
-
                             // Execute the stored procedure
-                            int returnValue = command.ExecuteNonQuery();
-                            if (returnValue > 0)
+                            using (SqlCommand command = new SqlCommand("dbo.SP_AddStudent", connection))
                             {
-                                MessageBox.Show("Failed to add student!", "Failed!",
-                                      MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            }
-                            else
-                            {
-                                MessageBox.Show("Student has been added successfully!", "Sumakses!",
-                                      MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                command.CommandType = CommandType.StoredProcedure;
 
-                                _logger.Log(fullName, $"Adds new student: {txtFirstName.Text} {txtLastName.Text}", roleID);
+                                command.Parameters.AddWithValue("@FirstName", txtFirstName.Text);
+                                command.Parameters.AddWithValue("@LastName", txtLastName.Text);
+                                //command.Parameters.AddWithValue("@Department", cbxDepartments.SelectedItem.ToString());
+                                //command.Parameters.AddWithValue("@Department", cbxDepartments.SelectedIndex.ToString());
+                                command.Parameters.AddWithValue("@UserName", txtUsername.Text);
+                                command.Parameters.AddWithValue("@Password", txtPassword.Text);
+                                command.Parameters.AddWithValue("@PictureDirectory", FilePath);
+                                command.Parameters.AddWithValue("@Status", cbStatus.SelectedItem.ToString());
+                                //command.Parameters.AddWithValue("@PictureDirectory", pbxTeacherProfile.ImageLocation ?? "");
 
-                                // Refresh the dgvTeachers table
-                                GetData(@"
+                                // Add the new profile fields, why did I forget this earlier? Hahaha
+                                command.Parameters.AddWithValue("@Age", txtAge.Text);
+                                command.Parameters.AddWithValue("@Gender", cbGender.SelectedIndex.ToString());
+                                command.Parameters.AddWithValue("@Phone", txtPhone.Text);
+                                command.Parameters.AddWithValue("@Address", txtAddress.Text);
+                                command.Parameters.AddWithValue("@Email", txtEmailAddress.Text);
+                                command.Parameters.AddWithValue("@RecoveryCode", Convert.ToInt32(txtRecoveryCode.Text));
+
+                                //command.ExecuteNonQuery();
+
+                                // Execute the stored procedure
+                                int returnValue = command.ExecuteNonQuery();
+                                if (returnValue > 0)
+                                {
+                                    MessageBox.Show("Failed to add student!", "Failed!",
+                                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Student has been added successfully!", "Sumakses!",
+                                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                    _logger.Log(fullName, $"Adds new student: {txtFirstName.Text} {txtLastName.Text}", roleID);
+
+                                    // Refresh the dgvTeachers table
+                                    GetData(@"
                                     SELECT * FROM dbo.DisplayAllStudentData()
                                 ");
 
-                                // Clear form fields
-                                ClearField();
+                                    // Clear form fields
+                                    ClearField();
+                                }
                             }
                         }
                     }
@@ -204,6 +210,7 @@ namespace StoredProcedureLogin.Resources
             {
                 // Validate required fields
                 VerifyInputs();
+                ConfirmInputs();
 
                 string connectionString = @"Data Source=RICSON\SQLEXPRESS;Initial Catalog=StoredProcedure;Integrated Security=True;";
 
@@ -611,9 +618,30 @@ namespace StoredProcedureLogin.Resources
             if (errorCounter >= 1)
             {
                 MessageBox.Show(errorMessage, "Validation Error");
+                isErrorFound = true;
                 errorCounter = 0;
                 return;
             }
+        }
+
+        private void ConfirmInputs() {
+
+            if (isErrorFound == false)
+            {
+                MessageBox.Show($"First Name: {txtFirstName.Text} \n" +
+                            $"Last Name: {txtLastName.Text}. \n" +
+                            $"Username: {txtUsername.Text} \n" +
+                            $"Password: {txtPassword.Text} \n" +
+                            $"Age {txtAge.Text}  \n" +
+                            $"Email: {txtEmailAddress.Text} \n" +
+                            $"Address: {txtAddress.Text} \n " +
+                            $"Status: {cbStatus.SelectedItem.ToString()} \n" +
+                            $"Gender: {cbGender.SelectedItem.ToString()} \n" +
+                            $"Phone: {txtPhone.Text} \n " +
+                            $"Recovery Code: {txtRecoveryCode.Text} \n", "Input Confirmation",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
 

@@ -26,13 +26,16 @@ namespace StoredProcedureLogin
             _profilePictureString = profilePictureString;
             fullName = FullName;
             roleID = RoleID;
+
+            // connect => Logger.cs
+            _logger = new Logger();
         }
         private void TeacherDashboard_Load(object sender, EventArgs e)
         {
             pbxPictureProfile.Image = System.Drawing.Image.FromFile(_profilePictureString);
             Console.WriteLine("TEACHER Profile Picture Path: " + _profilePictureString);
 
-            LoadForm(new TeacherProfile());
+            LoadForm(new TeacherProfile(lblUsername.Text));
         }
 
         // container for other panels 
@@ -54,17 +57,17 @@ namespace StoredProcedureLogin
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            LoadForm(new TeacherProfile());
+            LoadForm(new TeacherProfile(lblUsername.Text));
         }
 
         private void btnSubjects_Click(object sender, EventArgs e)
         {
-            LoadForm(new TeacherSubjects());
+            LoadForm(new TeacherSubjects(lblUsername.Text));
         }
 
         private void btnStudents_Click(object sender, EventArgs e)
         {
-            LoadForm(new TeacherStudents());
+            LoadForm(new TeacherStudents(lblUsername.Text));
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -76,7 +79,10 @@ namespace StoredProcedureLogin
                 Hide();
                 new LoginForm().Show();
 
-                _logger.Log(fullName, "Logs out", roleID);
+                Console.WriteLine($"fullName => {fullName}");
+                Console.WriteLine($"roleID => {roleID}");
+
+                //_logger.Log(fullName, "Logs out", roleID);
             }
         }
     }

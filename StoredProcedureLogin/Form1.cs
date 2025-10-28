@@ -5,7 +5,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,8 +21,6 @@ namespace StoredProcedureLogin
         private System.Windows.Forms.Timer countdownTimer;
 
         int? roleId = null;
-
-        private static readonly byte[] salt = new byte[16];
 
         public LoginForm()
         {
@@ -44,12 +41,6 @@ namespace StoredProcedureLogin
             countdownTimer.Interval = 1000; // 1 second interval
             countdownTimer.Tick += DisableLogin;
             countdownTimer.Tag = 10; // 10 seconds countdown
-
-            // Initialize salt
-            using (var rng = RandomNumberGenerator.Create())
-            {
-                rng.GetBytes(salt);
-            }
         }
 
         public string FullName { get; private set; }
@@ -60,7 +51,7 @@ namespace StoredProcedureLogin
 
         private async Task<int?> GetUserRoleAsync(string username, string password)
         {
-            //int? roleId = null;
+            int? roleId = null;
 
             using (SqlConnection connection = new SqlConnection(connectingString))
             {
@@ -70,7 +61,7 @@ namespace StoredProcedureLogin
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@Username", username);
-                    command.Parameters.AddWithValue("@PasswordHash", password); // Empty password not used
+                    command.Parameters.AddWithValue("@Password", password); // Empty password not used
 
                     try
                     {
@@ -79,14 +70,11 @@ namespace StoredProcedureLogin
                             if (await reader.ReadAsync())
                             {
                                 roleId = Convert.ToInt32(reader["role"]);
-
                                 string firstName = reader.IsDBNull(reader.GetOrdinal("FirstName")) ? string.Empty : reader.GetString(reader.GetOrdinal("FirstName"));
                                 string lastName = reader.IsDBNull(reader.GetOrdinal("LastName")) ? string.Empty : reader.GetString(reader.GetOrdinal("LastName"));
                                 FullName = $"{firstName} {lastName}".Trim();
                                 Console.WriteLine($"FullName upon login => {FullName}");
                             }
-
-                            
                         }
                     }
                     catch (SqlException ex)
@@ -97,35 +85,6 @@ namespace StoredProcedureLogin
             }
 
             return roleId;
-        }
-
-
-        private bool VerifyPasswordHash(string password, string storedHash)
-        {
-            try
-            {
-                // Convert the stored hash to byte array
-                byte[] storedHashBytes = Convert.FromBase64String(storedHash);
-
-                // Create new hash from input password
-                using (var deriveBytes = new Rfc2898DeriveBytes(password, salt, 100000))
-                {
-                    byte[] newHashBytes = deriveBytes.GetBytes(32);
-
-                    // Compare the two hashes
-                    for (int i = 0; i < newHashBytes.Length; i++)
-                    {
-                        if (newHashBytes[i] != storedHashBytes[i])
-                            return false;
-                    }
-                }
-
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
@@ -198,6 +157,7 @@ namespace StoredProcedureLogin
                             dashboard.Show();
                             Console.WriteLine($"Log profilePictureString {profilePictureString}");
 
+                            Console.WriteLine($"FullName => {FullName}");
                             // logs successful login
                             _logger.Log(FullName, "Logs in", roleId.Value);
                             Console.WriteLine($"RoleID upon logging => {roleId}");
@@ -210,21 +170,22 @@ namespace StoredProcedureLogin
                     }
                     else
                     {
-                        
+
                         MessageBox.Show($"Invalid username or password ", "Login Failed");
                         Console.WriteLine($"{loginSuccess} within the if/else statement");
 
-                        if (LoginAttemptCounter > 3) {
+                        if (LoginAttemptCounter > 3)
+                        {
                             Close();
                         }
                     }
-                }    
+                }
             }
             catch (SqlException ex)
             {
                 LoginAttempts();
-                    MessageBox.Show($"Database error: {ex.Message}. Number of attempts: {LoginAttemptCounter}. " +
-                            $"It will be closed on the 3rd incorrect attempt!", "Database Error");
+                MessageBox.Show($"Database error: {ex.Message}. Number of attempts: {LoginAttemptCounter}. " +
+                        $"It will be closed on the 3rd incorrect attempt!", "Database Error");
 
             }
             catch (Exception ex)
@@ -235,27 +196,27 @@ namespace StoredProcedureLogin
             }
         }
 
-        
+
         private async Task<bool> AttemptLogin(string username, string password)
         {
             bool loginSuccess = false;
 
             using (SqlConnection connection = new SqlConnection(connectingString))
             {
-                    await connection.OpenAsync();
+                await connection.OpenAsync();
 
-                    using (SqlCommand command = new SqlCommand("SP_LoginForm", connection))
+                using (SqlCommand command = new SqlCommand("SP_LoginForm", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Use Add method instead of AddWithValue for better type safety
+                    command.Parameters.Add("@Username", SqlDbType.NVarChar, 100).Value = username;
+                    command.Parameters.Add("@Password", SqlDbType.NVarChar, -1).Value = password;
+
+                    try
                     {
-                        command.CommandType = CommandType.StoredProcedure;
-
-                        // Use Add method instead of AddWithValue for better type safety
-                        command.Parameters.Add("@Username", SqlDbType.NVarChar, 100).Value = username;
-                        command.Parameters.Add("@PasswordHash", SqlDbType.NVarChar, -1).Value = password;
-
-                        try
+                        using (SqlDataReader reader = await command.ExecuteReaderAsync())
                         {
-                            using (SqlDataReader reader = await command.ExecuteReaderAsync())
-                            {
                             // Check HasRows first, then read
                             if (await reader.ReadAsync())
                             {
@@ -263,77 +224,26 @@ namespace StoredProcedureLogin
 
                                 // Verify all columns exist
                                 string storedUsername = reader.IsDBNull(reader.GetOrdinal("Username")) ? null : reader.GetString(reader.GetOrdinal("Username"));
-                                string storedPasswordHash = reader.IsDBNull(reader.GetOrdinal("PasswordHash")) ? null : reader.GetString(reader.GetOrdinal("PasswordHash"));
+                                string storedPassword = reader.IsDBNull(reader.GetOrdinal("Password")) ? null : reader.GetString(reader.GetOrdinal("Password"));
 
-                                if (storedUsername != username || storedPasswordHash != password)
+                                if (storedUsername != username || storedPassword != password)
                                     loginSuccess = false;
                             }
-
-                            //// Check HasRows first, then read
-                            //if (await reader.ReadAsync())
-                            //{
-                            //    string storedPasswordHash = reader.GetString(reader.GetOrdinal("PasswordHash"));
-
-                            //    // Compare the hashed input password with stored hash
-                            //    if (VerifyPasswordHash(password, storedPasswordHash))
-                            //    {
-                            //        loginSuccess = true;
-                            //    }
-                            //}
-                        }
-                        }
-                        catch (SqlException ex)
-                        {
-                            LoginAttempts();
-                            _logger.Log(FullName, "Unable to log in", roleId.Value);
-                            MessageBox.Show($"Database error: {ex.Message}. Number of attempts: {LoginAttemptCounter}. " +
-                                $"It will be closed on the 3rd incorrect attempt!", "Database Error | AttemptLogin");
-                            return false;
                         }
                     }
+                    catch (SqlException ex)
+                    {
+                        LoginAttempts();
+                        _logger.Log(FullName, "Unable to log in", roleId.Value);
+                        MessageBox.Show($"Database error: {ex.Message}. Number of attempts: {LoginAttemptCounter}. " +
+                            $"It will be closed on the 3rd incorrect attempt!", "Database Error | AttemptLogin");
+                        return false;
+                    }
                 }
-
-            //await connection.OpenAsync();
-
-            //using (SqlCommand command = new SqlCommand("SP_LoginForm", connection))
-            //{
-            //    command.CommandType = CommandType.StoredProcedure;
-
-            //    // Use Add method instead of AddWithValue for better type safety
-            //    command.Parameters.Add("@Username", SqlDbType.NVarChar, 100).Value = username;
-            //    command.Parameters.Add("@PasswordHash", SqlDbType.NVarChar, -1).Value = password;
-
-            //    try
-            //    {
-            //        using (SqlDataReader reader = await command.ExecuteReaderAsync())
-            //        {
-            //            // Check HasRows first, then read
-            //            if (await reader.ReadAsync())
-            //            {
-            //                string storedPasswordHash = reader.GetString(reader.GetOrdinal("PasswordHash"));
-
-            //                // Compare the hashed input password with stored hash
-            //                if (VerifyPasswordHash(password, storedPasswordHash))
-            //                {
-            //                    loginSuccess = true;
-            //                }
-            //            }
-            //        }
-            //    }
-            //    catch (SqlException ex)
-            //    {
-            //        LoginAttempts();
-            //        _logger.Log(FullName, "Unable to log in", roleId.Value);
-            //        MessageBox.Show($"Database error: {ex.Message}. Number of attempts: {LoginAttemptCounter}. " +
-            //            $"It will be closed on the 3rd incorrect attempt!", "Database Error | AttemptLogin");
-            //        return false;
-            //    }
-            //}
+            }
+ 
             return loginSuccess;
         }
-
-                
-        //}
 
         private void ClearForm()
         {

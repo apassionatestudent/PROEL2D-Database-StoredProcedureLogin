@@ -157,11 +157,11 @@
             this.dgvDataReference.AllowUserToResizeColumns = false;
             this.dgvDataReference.AllowUserToResizeRows = false;
             this.dgvDataReference.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDataReference.Location = new System.Drawing.Point(40, 436);
+            this.dgvDataReference.Location = new System.Drawing.Point(12, 436);
             this.dgvDataReference.Name = "dgvDataReference";
             this.dgvDataReference.RowHeadersWidth = 51;
             this.dgvDataReference.RowTemplate.Height = 24;
-            this.dgvDataReference.Size = new System.Drawing.Size(828, 55);
+            this.dgvDataReference.Size = new System.Drawing.Size(856, 55);
             this.dgvDataReference.TabIndex = 11;
             // 
             // DashboardStudent

@@ -152,6 +152,7 @@
             this.cbxFilterRoles.Name = "cbxFilterRoles";
             this.cbxFilterRoles.Size = new System.Drawing.Size(194, 24);
             this.cbxFilterRoles.TabIndex = 12;
+            this.cbxFilterRoles.SelectedIndexChanged += new System.EventHandler(this.cbxFilterRoles_SelectedIndexChanged);
             this.cbxFilterRoles.Click += new System.EventHandler(this.cbxFilterRoles_Click);
             // 
             // btnSearch
@@ -172,7 +173,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(223, 60);
             this.btnReset.TabIndex = 14;
-            this.btnReset.Text = "Search";
+            this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 

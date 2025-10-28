@@ -1,0 +1,874 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Educational\\repos\\StoredProcedureLogin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|d:\\educational\\repos\\storedprocedurelogin\\storedprocedurelogin\\admindashboardpanelpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\admindashboardpanelpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\admindashboardpanelpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\admindashboardpanelpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\resources\\adminstudentpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\resources\\adminstudentpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\admindashboardpanelpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\admindashboardpanelpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminsubjectspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminsubjectspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminsubjectspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminsubjectspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\resources\\adminstudentpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\resources\\adminstudentpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminlogspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminlogspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\admindashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\admindashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teachersubjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teachersubjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminteacherspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminteacherspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminteacherspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminteacherspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminsubjectspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminsubjectspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\resources\\adminstudentpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\resources\\adminstudentpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminreportspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminreportspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminreportspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminreportspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminlogspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminlogspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\dashboardcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\dashboardcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\dashboardstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\dashboardstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\dashboardcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\dashboardcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminlogspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminlogspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teacherstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teacherstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teacherstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teacherstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teachersubjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teachersubjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\dashboardstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\dashboardstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teacherdashboard.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teacherdashboard.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\pictureloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\pictureloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminteacherspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminteacherspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teacherdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teacherdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teacherdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teacherdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\teacherdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\teacherdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\adminreportspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\adminreportspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\dashboardcourses.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\dashboardcourses.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\dashboardstudent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\dashboardstudent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|D:\\Educational\\repos\\StoredProcedureLogin\\storedprocedurelogin\\registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C26971-AE66-4AFC-9B08-2E0481A092EB}|StoredProcedureLogin\\StoredProcedureLogin.csproj|solutionrelative:storedprocedurelogin\\registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 243,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 25,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Form1.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Form1.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Form1.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:24:35.549Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Form1.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Form1.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Form1.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Form1.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwD8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:28:45.35Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Logger.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Logger.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Logger.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Logger.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T01:28:37.259Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminDashboard.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminDashboard.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboard.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminDashboard.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAA0wDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:20:23.819Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DashboardStudent.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardStudent.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\DashboardStudent.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardStudent.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\DashboardStudent.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T05:57:59.663Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DashboardStudent.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardStudent.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\DashboardStudent.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardStudent.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\DashboardStudent.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T06:23:20.867Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ForgotPassword.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\ForgotPassword.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\ForgotPassword.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\ForgotPassword.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\ForgotPassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T10:13:58.074Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminDashboard.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminDashboard.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboard.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T01:05:38.71Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DashboardCourses.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardCourses.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\DashboardCourses.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardCourses.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\DashboardCourses.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T06:15:04.931Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DashboardCourses.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardCourses.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\DashboardCourses.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardCourses.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\DashboardCourses.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAAIgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T06:23:28.503Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminSubjectsPage.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminSubjectsPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminSubjectsPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminSubjectsPage.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminSubjectsPage.cs",
+              "ViewState": "AgIAAGACAAAAAAAAAAAuwG8CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T05:16:02.989Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminSubjectsPage.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminSubjectsPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminSubjectsPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminSubjectsPage.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminSubjectsPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T04:55:50.608Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TeacherStudents.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherStudents.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherStudents.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherStudents.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherStudents.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAEwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T06:10:58.223Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TeacherStudents.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherStudents.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherStudents.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherStudents.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherStudents.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T03:56:54.469Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminStudentPage.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Resources\\AdminStudentPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Resources\\AdminStudentPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Resources\\AdminStudentPage.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\Resources\\AdminStudentPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:34:36.442Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminStudentPage.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Resources\\AdminStudentPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Resources\\AdminStudentPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Resources\\AdminStudentPage.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Resources\\AdminStudentPage.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAQwLYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T15:59:13.571Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminTeachersPage.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminTeachersPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminTeachersPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminTeachersPage.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminTeachersPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:44:47.691Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminTeachersPage.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminTeachersPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminTeachersPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminTeachersPage.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminTeachersPage.cs",
+              "ViewState": "AgIAAD0CAAAAAAAAAAAuwEYCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T05:27:15.449Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminDashboardPanelPage.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboardPanelPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminDashboardPanelPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboardPanelPage.cs [Design]*",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminDashboardPanelPage.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:30:46.237Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminDashboardPanelPage.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboardPanelPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminDashboardPanelPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboardPanelPage.cs*",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminDashboardPanelPage.cs*",
+              "ViewState": "AgIAALgAAAAAAAAAAAAuwMoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T20:00:31.068Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminDashboardPanelPage.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboardPanelPage.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminDashboardPanelPage.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboardPanelPage.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminDashboardPanelPage.Designer.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAASwJ4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T21:05:47.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminLogsPage.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminLogsPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminLogsPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminLogsPage.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminLogsPage.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAAwLQAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T04:15:19.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminLogsPage.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminLogsPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminLogsPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminLogsPage.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminLogsPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:51:49.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TeacherDashboard.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherDashboard.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherDashboard.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherDashboard.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T01:07:32.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "TeacherDashboard.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherDashboard.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherDashboard.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherDashboard.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherDashboard.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAEAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T03:09:38.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TeacherProfile.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherProfile.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherProfile.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherProfile.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherProfile.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAEwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T04:00:44.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TeacherProfile.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherProfile.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherProfile.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherProfile.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherProfile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T03:53:04.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TeacherSubjects.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherSubjects.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherSubjects.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherSubjects.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherSubjects.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T03:55:32.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TeacherSubjects.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherSubjects.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherSubjects.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherSubjects.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherSubjects.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAkwI8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T06:11:24.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ForgotPassword.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\ForgotPassword.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\ForgotPassword.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\ForgotPassword.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\ForgotPassword.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T10:20:18.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Registration.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Registration.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Registration.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Registration.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAmwLEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:49:06.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Dashboard.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Dashboard.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Dashboard.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Dashboard.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAiwIYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T05:19:09.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DashboardCourses.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardCourses.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\DashboardCourses.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardCourses.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\DashboardCourses.Designer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAApwJoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T11:50:12.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DashboardStudent.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardStudent.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\DashboardStudent.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\DashboardStudent.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\DashboardStudent.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAApwNAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T10:27:01.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdminSubjectsPage.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminSubjectsPage.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminSubjectsPage.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminSubjectsPage.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminSubjectsPage.Designer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwFABAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T12:17:26.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Program.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Program.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Program.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAApwBIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:49:20.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminStudentPage.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Resources\\AdminStudentPage.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Resources\\AdminStudentPage.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Resources\\AdminStudentPage.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Resources\\AdminStudentPage.Designer.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAD4v1wAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T07:11:31.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AdminTeachersPage.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminTeachersPage.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminTeachersPage.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminTeachersPage.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminTeachersPage.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T15:15:54.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TeacherDashboard.resx",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherDashboard.resx",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherDashboard.resx",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherDashboard.resx",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherDashboard.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-10-06T05:15:25.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "TeacherDashboard.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\TeacherDashboard.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\TeacherDashboard.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\TeacherDashboard.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T05:15:24.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Dashboard.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Dashboard.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Dashboard.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T05:15:07.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AdminReportsPage.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminReportsPage.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminReportsPage.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminReportsPage.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminReportsPage.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T14:16:31.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdminReportsPage.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminReportsPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminReportsPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminReportsPage.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminReportsPage.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowBMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T04:53:06.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AdminLogsPage.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminLogsPage.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminLogsPage.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminLogsPage.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminLogsPage.Designer.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAAASwNkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T04:15:27.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Dashboard.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Dashboard.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Dashboard.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Dashboard.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Dashboard.Designer.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T05:31:56.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminReportsPage.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminReportsPage.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminReportsPage.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminReportsPage.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminReportsPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:46:42.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PictureLoader.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\PictureLoader.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\PictureLoader.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\PictureLoader.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\PictureLoader.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwCsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T05:56:54.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminDashboard.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\AdminDashboard.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\AdminDashboard.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\AdminDashboard.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:24:06.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Form1.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Form1.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T04:35:58.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Registration.cs [Design]",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Registration.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Registration.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Registration.cs [Design]",
+              "RelativeToolTip": "StoredProcedureLogin\\Registration.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:39:28.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Registration.Designer.cs",
+              "DocumentMoniker": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Registration.Designer.cs",
+              "RelativeDocumentMoniker": "StoredProcedureLogin\\Registration.Designer.cs",
+              "ToolTip": "D:\\Educational\\repos\\StoredProcedureLogin\\StoredProcedureLogin\\Registration.Designer.cs",
+              "RelativeToolTip": "StoredProcedureLogin\\Registration.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T01:31:43.254Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

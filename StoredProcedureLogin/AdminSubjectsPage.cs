@@ -32,6 +32,8 @@ namespace StoredProcedureLogin
         private string fullName;
         private int roleID;
 
+        bool isErrorFound = false;
+
         // Grr... for complicatd InstructorID retrieval and its association per teacher 
         private Dictionary<string, int> instructorDictionary = new Dictionary<string, int>();
         private Dictionary<string, int> departmentDictionary = new Dictionary<string, int>();
@@ -162,7 +164,6 @@ namespace StoredProcedureLogin
 
             departmentDictionary.Clear();
 
-
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -202,6 +203,10 @@ namespace StoredProcedureLogin
             GetData(@"
                 SELECT * FROM dbo.DisplayAllSubjects()
             ");
+
+            int rowCount = dgvSubjects.Rows.Count;  
+
+            txtActiveSubjects.Text = Convert.ToString(rowCount);
 
         }
 
@@ -267,8 +272,6 @@ namespace StoredProcedureLogin
                                MessageBoxButtons.OK,
                                MessageBoxIcon.Error);
             }
-
-
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -286,6 +289,7 @@ namespace StoredProcedureLogin
             {
                 // Check if inputs are correct for adding subject 
                 VerifyInputs();
+                ConfirmInputs();
 
                 try
                 {
@@ -365,6 +369,7 @@ namespace StoredProcedureLogin
             {
                 // Check if the update is valid 
                 VerifyInputs();
+                ConfirmInputs();
 
                 string connectionString = @"Data Source=RICSON\SQLEXPRESS;Initial Catalog=StoredProcedure;Integrated Security=True;";
 
@@ -612,8 +617,24 @@ namespace StoredProcedureLogin
             {
                 MessageBox.Show(errorMessage, "Validation Error");
                 errorCounter = 0;
+                isErrorFound = true;
                 return;
             }
+        }
+
+        private void ConfirmInputs()
+        {
+            if (isErrorFound == false)
+            {
+                MessageBox.Show($"Course Name: {txtSubject.Text} \n" +
+                            $"Course Code: {txtCourseCode.Text}. \n" +
+                            $"Credits: {txtCredits.Text} \n" +
+                            $"Teacher: {cbxTeachers.SelectedItem.ToString()} \n" +
+                            $"Department {cbxDepartment.SelectedItem.ToString()}  \n" +
+                            $"Details: {txtDetails.Text}", "Input Confirmation",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+                
         }
     }
 }

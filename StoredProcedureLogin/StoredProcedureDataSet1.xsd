@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StoredProcedureDataSet1" targetNamespace="http://tempuri.org/StoredProcedureDataSet1.xsd" xmlns:mstns="http://tempuri.org/StoredProcedureDataSet1.xsd" xmlns="http://tempuri.org/StoredProcedureDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="StoredProcedureConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="StoredProcedureConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StoredProcedureLogin.Properties.Settings.GlobalReference.Default.StoredProcedureConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DisplayEnrollmentDataTableAdapter" GeneratorDataComponentClassName="DisplayEnrollmentDataTableAdapter" Name="DisplayEnrollmentData" UserDataComponentName="DisplayEnrollmentDataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StoredProcedureConnectionString (Settings)" DbObjectName="StoredProcedure.dbo.DisplayEnrollmentData" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT EnrollmentID, CourseID, CourseCode, CourseName FROM dbo.DisplayEnrollmentData()</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EnrollmentID" DataSetColumn="EnrollmentID" />
+              <Mapping SourceColumn="CourseID" DataSetColumn="CourseID" />
+              <Mapping SourceColumn="CourseCode" DataSetColumn="CourseCode" />
+              <Mapping SourceColumn="CourseName" DataSetColumn="CourseName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StoredProcedureDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="StoredProcedureDataSet1" msprop:Generator_DataSetName="StoredProcedureDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DisplayEnrollmentData" msprop:Generator_RowEvHandlerName="DisplayEnrollmentDataRowChangeEventHandler" msprop:Generator_RowDeletedName="DisplayEnrollmentDataRowDeleted" msprop:Generator_RowDeletingName="DisplayEnrollmentDataRowDeleting" msprop:Generator_RowEvArgName="DisplayEnrollmentDataRowChangeEvent" msprop:Generator_TablePropName="DisplayEnrollmentData" msprop:Generator_RowChangedName="DisplayEnrollmentDataRowChanged" msprop:Generator_RowChangingName="DisplayEnrollmentDataRowChanging" msprop:Generator_TableClassName="DisplayEnrollmentDataDataTable" msprop:Generator_RowClassName="DisplayEnrollmentDataRow" msprop:Generator_TableVarName="tableDisplayEnrollmentData" msprop:Generator_UserTableName="DisplayEnrollmentData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EnrollmentID" msprop:Generator_ColumnPropNameInRow="EnrollmentID" msprop:Generator_ColumnPropNameInTable="EnrollmentIDColumn" msprop:Generator_ColumnVarNameInTable="columnEnrollmentID" msprop:Generator_UserColumnName="EnrollmentID" type="xs:int" minOccurs="0" />
+              <xs:element name="CourseID" msprop:Generator_ColumnPropNameInRow="CourseID" msprop:Generator_ColumnPropNameInTable="CourseIDColumn" msprop:Generator_ColumnVarNameInTable="columnCourseID" msprop:Generator_UserColumnName="CourseID" type="xs:int" minOccurs="0" />
+              <xs:element name="CourseCode" msprop:Generator_ColumnPropNameInRow="CourseCode" msprop:Generator_ColumnPropNameInTable="CourseCodeColumn" msprop:Generator_ColumnVarNameInTable="columnCourseCode" msprop:Generator_UserColumnName="CourseCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CourseName" msprop:Generator_ColumnPropNameInRow="CourseName" msprop:Generator_ColumnPropNameInTable="CourseNameColumn" msprop:Generator_ColumnVarNameInTable="columnCourseName" msprop:Generator_UserColumnName="CourseName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

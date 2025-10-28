@@ -111,6 +111,9 @@ namespace StoredProcedureLogin
 
             else
             {
+                VerifyInputs();
+                ConfirmInputs();
+
                 try
                 {
                     // Validate required fields
@@ -216,9 +219,6 @@ namespace StoredProcedureLogin
                                   MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-
-                //string filePath = ofdPicture.FileName;
-                //pbxTeacherProfile.Image = Image.FromFile(filePath);
 
                 // Validate username uniqueness
                 string connectionString = @"Data Source=RICSON\SQLEXPRESS;Initial Catalog=StoredProcedure;Integrated Security=True;";
@@ -334,8 +334,6 @@ namespace StoredProcedureLogin
                         }
                         else
                         {
-                            
-
                             MessageBox.Show("Teacher deleted successfully!", "Success",
                                           MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
@@ -571,6 +569,21 @@ namespace StoredProcedureLogin
                 errorCounter = 0;
                 return;
             }
+        }
+
+        private void ConfirmInputs()
+        {
+            MessageBox.Show($"First Name: {txtFirstName.Text} \n" +
+                            $"Last Name: {txtLastName.Text}. \n" +
+                            $"Username: {txtUsername.Text} \n" +
+                            $"Password: {txtPassword.Text} \n" +
+                            $"Age {txtAge.Text}  \n" +
+                            $"Email: {txtEmail.Text} \n" +
+                            $"Address: {txtAddress.Text} \n " +
+                            $"Gender: {cbxGender.SelectedItem.ToString()} \n" +
+                            $"Phone: {txtPhone.Text} \n " +
+                            $"Recovery Code: {txtRecoveryCode.Text} \n", "Input Confirmation",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
     }

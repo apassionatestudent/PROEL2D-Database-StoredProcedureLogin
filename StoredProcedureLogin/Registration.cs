@@ -16,6 +16,7 @@ namespace StoredProcedureLogin
     {
         private OpenFileDialog ofdPicture;
         string FilePath = string.Empty;
+
         public Registration()
         {
             InitializeComponent();
@@ -135,7 +136,7 @@ namespace StoredProcedureLogin
                     errorCounter++;
                 }
 
-                
+
                 else
                 {
                     if (!int.TryParse(txtRecoveryCode.Text.Trim(), out _))
@@ -174,7 +175,7 @@ namespace StoredProcedureLogin
                         command.Parameters.AddWithValue("@Role", "Student");
                         //command.Parameters.AddWithValue("@ID", studentID);
                         command.Parameters.AddWithValue("@Username", txtUsername.Text);
-                        command.Parameters.AddWithValue("@PasswordHash", txtPassword.Text); // Note: In production, hash the password first
+                        command.Parameters.AddWithValue("@Password", txtPassword.Text); // Note: In production, hash the password first
                         command.Parameters.AddWithValue("@FirstName", txtFirstName.Text);
                         command.Parameters.AddWithValue("@LastName", txtLastName.Text);
                         command.Parameters.AddWithValue("@Age", Convert.ToInt32(txtAge.Text));
@@ -249,8 +250,8 @@ namespace StoredProcedureLogin
                 // Now you can use the filePath variable as needed
                 MessageBox.Show($"Selected picture: {filePath}");
 
-                pbxProfile.Image = Image.FromFile(filePath);    
-                FilePath = filePath;    
+                pbxProfile.Image = Image.FromFile(filePath);
+                FilePath = filePath;
             }
         }
 
